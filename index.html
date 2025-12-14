@@ -30,6 +30,319 @@
       background: var(--sea);
       color: var(--white);
       padding: 2rem 1.5rem;
-      text atm
-    </style>
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .day {
+      padding: 2rem 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .day h2 {
+      color: var(--sea);
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    .route-info {
+      background: var(--light-sea);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .place {
+      margin: 1.5rem 0;
+    }
+
+    .place h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--blue);
+    }
+
+    .place p {
+      margin-bottom: 0.6rem;
+    }
+
+    .info-line {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+    }
+
+    .map-container {
+      height: 500px;
+      margin: 2rem 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .budget {
+      padding: 2rem 1.5rem;
+      background: #edf7ff;
+    }
+
+    .budget h2 {
+      color: var(--sea);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 0.6rem;
+      text-align: left;
+      border-bottom: 1px solid #d1e7ff;
+    }
+
+    th {
+      background: var(--sea);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #7f8c8d;
+      font-size: 0.95rem;
+      background: #f0f8ff;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      .route-info { font-size: 0.95rem; }
+    }
+  </style>
 </head>
+<body>
+
+  <header>
+    <h1>Путешествие: Москва → Новороссийск → Москва</h1>
+    <div class="subtitle">2–10 января 2026 • Старт и финиш: Шелепихинская наб., 34к5, Москва</div>
+  </header>
+
+  <main>
+    <div class="day">
+      <h2>День 1: Москва → Таруса → Ростов-на-Дону</h2>
+      <div class="route-info">Старт в 8:00 из Москвы • Прибытие в Ростов к 20:00</div>
+
+      <div class="place">
+        <h3>Храм Покрова Пресвятой Богородицы (Таруса)</h3>
+        <p>Древний храм на берегу Оки, хранящий дух уединённой молитвы и поэтической тишины. Архитектура XIX века, золочёные иконы, атмосфера духовного покоя.</p>
+        <div class="info-line">8:00–19:00 • Бесплатно</div>
+      </div>
+
+      <div class="place">
+        <h3>Скала «Чёртов палец»</h3>
+        <p>Место силы на берегу Оки, где вода, камень и воздух создают уникальную энергетику. Идеально для медитации и осознанного пребывания в природе.</p>
+        <div class="info-line">Круглосуточно • Бесплатно</div>
+      </div>
+
+      <div class="place">
+        <h3>Рождество-Преображенский кафедральный собор (Ростов-на-Дону)</h3>
+        <p>Главный православный храм Юга России, построенный в византийском стиле. Золотые купола, мощи святых, умиротворяющий звон колоколов.</p>
+        <div class="info-line">7:00–19:00 • Бесплатно</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 2: Ростов → Новороссийск</h2>
+      <div class="route-info">Выезд в 8:30 • Прибытие к 15:00</div>
+
+      <div class="place">
+        <h3>Свято-Иверский женский монастырь</h3>
+        <p>Монастырь на берегу Дона, окружённый тишиной и зеленью. Здесь — источник с целебной водой, часовня и возможность трапезы по благословению.</p>
+        <div class="info-line">6:00–20:00 • Бесплатно</div>
+      </div>
+
+      <div class="place">
+        <h3>Храм св. благоверного князя Александра Невского (Новороссийск)</h3>
+        <p>Главная православная святыня города, венчающая Суджукскую косу. Отсюда открывается панорама на море и гавань. Место молитвы и внутреннего покоя.</p>
+        <div class="info-line">8:00–19:00 • Бесплатно</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 3: Новороссийск → Дивноморское</h2>
+      <div class="route-info">Прогулка: 9:00–17:00</div>
+
+      <div class="place">
+        <h3>Скальная тропа Дивноморского</h3>
+        <p>Живописный маршрут вдоль Чёрного моря, проходящий через гроты, арки и обрывы. Лёгкий трек (5 км), энергетически насыщенная природа.</p>
+        <div class="info-line">Круглосуточно • Бесплатно</div>
+      </div>
+
+      <div class="place">
+        <h3>Мыс Дооб</h3>
+        <p>Самая южная точка России на Чёрном море. Здешние скалы излучают древнюю энергию. Идеальное место для утренней практики или вечерней медитации.</p>
+        <div class="info-line">Круглосуточно • Бесплатно</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 4: Джубга → Дольмены</h2>
+      <div class="route-info">Выезд в 9:00 • Возвращение к 17:00</div>
+
+      <div class="place">
+        <h3>Долина дольменов (Джубга)</h3>
+        <p>Одно из крупнейших скоплений мегалитов в Европе (2–4 тыс. лет до н.э.). Каждый дольмен — портал в древние времена, место силы для осознанного пребывания.</p>
+        <div class="info-line">9:00–18:00 • 300 ₽</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 5: Гора Француз</h2>
+      <div class="route-info">Прогулка: 10:00–15:00</div>
+
+      <div class="place">
+        <h3>Гора Француз</h3>
+        <p>Место боевой славы и духовного покоя. С вершины — панорама на Новороссийскую бухту. Лавочки, аллеи памяти, тишина и ветер с моря.</p>
+        <div class="info-line">Круглосуточно • Бесплатно</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 6: Абрау</h2>
+      <div class="route-info">Выезд в 9:00 • Возвращение к 18:00</div>
+
+      <div class="place">
+        <h3>Озеро Абрау</h3>
+        <p>Священное озеро среди гор, окружённое виноградниками. Вода — зеркало неба, идеальное для фотосессий и размышлений.</p>
+        <div class="info-line">Круглосуточно • Бесплатно</div>
+      </div>
+
+      <div class="place">
+        <h3>Церковь Св. Александра Невского (Абрау)</h3>
+        <p>Белокаменный храм на берегу озера, построенный в русском стиле. Тихое место для молитвы и внутреннего уединения.</p>
+        <div class="info-line">8:00–18:00 • Бесплатно</div>
+      </div>
+
+      <div class="place">
+        <h3>Сафари-парк «Абрау»</h3>
+        <p>Парк диких животных в живописной долине. Можно увидеть львов, тигров, медведей в условиях, приближённых к естественным.</p>
+        <div class="info-line">10:00–17:00 • 800 ₽</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 7: Источник св. Николая (с. Васильевка)</h2>
+      <div class="route-info">Утренняя поездка: 8:00–12:00</div>
+
+      <div class="place">
+        <h3>Святой источник св. Николая Чудотворца</h3>
+        <p>Целебный источник в лесу, с часовней и купелью. Вода не замерзает зимой. Место паломничества и духовного очищения.</p>
+        <div class="info-line">Круглосуточно • Бесплатно (добровольный донат)</div>
+      </div>
+    </div>
+
+    <div class="day">
+      <h2>День 8: Новороссийск → Ростов-на-Дону</h2>
+      <div class="route-info">Выезд в 8:00 • Прибытие к 19:00</div>
+      <p>Дорога домой через Ростов. Ночёвка у друзей.</p>
+    </div>
+
+    <div class="day">
+      <h2>День 9: Ростов → Москва</h2>
+      <div class="route-info">Выезд в 7:00 • Прибытие в Москву к 21:00</div>
+      <p>Завершение путешествия. Возвращение на Шелепихинскую набережную.</p>
+    </div>
+
+        <div class="map-container" id="map"></div>
+
+    <div class="budget">
+      <h2>Примерный бюджет на 2 человек</h2>
+      <table>
+        <tr><th>Статья расходов</th><th>Сумма (₽)</th></tr>
+        <tr><td>Бензин (2 700 км)</td><td>14 040</td></tr>
+        <tr><td>Платная трасса М-4</td><td>2 200</td></tr>
+        <tr><td>Питание (9 дн × 2 чел × 750 ₽)</td><td>13 500</td></tr>
+        <tr><td>Прочие расходы</td><td>10 000</td></tr>
+        <tr><td>Сафари-парк (2 билета)</td><td>1 600</td></tr>
+        <tr><td>Дольмены (2 билета)</td><td>600</td></tr>
+        <tr style="background:#dbe9f9; font-weight:bold;">
+          <td>Итого</td>
+          <td>41 940</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 | Приватный маршрут</p>
+    <p>Вернулись в Москву 10 января, 21:00. Шелепихинская наб., 34к5.</p>
+  </footer>
+
+  <!-- Yandex Maps API с вашим ключом -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=313b0c8b-b4e1-43e7-90da-e8a5b9592fde"></script>
+  <script>
+    ymaps.ready(init);
+    function init() {
+      const map = new ymaps.Map('map', {
+        center: [54.5, 40.0],
+        zoom: 6,
+        controls: ['zoomControl', 'fullscreenControl']
+      });
+
+      // Точки маршрута
+      const points = [
+        { name: 'Москва', coords: [55.751244, 37.618423], desc: 'Старт: Шелепихинская наб., 34к5' },
+        { name: 'Таруса', coords: [54.8811, 37.1250], desc: 'Храм Покрова, Чёртов палец' },
+        { name: 'Ростов-на-Дону', coords: [47.2357, 39.7015], desc: 'Ночёвка у друзей' },
+        { name: 'Новороссийск', coords: [44.7244, 37.7675], desc: 'Храм Александра Невского' },
+        { name: 'Дивноморское', coords: [44.8769, 38.1036], desc: 'Скальная тропа' },
+        { name: 'Джубга', coords: [44.4131, 39.0797], desc: 'Дольмены' },
+        { name: 'Абрау', coords: [44.8800, 37.6078], desc: 'Озеро, церковь, Сафари-парк' },
+        { name: 'Васильевка', coords: [44.8000, 37.8000], desc: 'Источник св. Николая' },
+        { name: 'Ростов-на-Дону', coords: [47.2357, 39.7015], desc: 'Ночёвка у друзей' },
+        { name: 'Москва', coords: [55.751244, 37.618423], desc: 'Финиш: Шелепихинская наб., 34к5' }
+      ];
+
+      // Добавляем метки
+      points.forEach((point, i) => {
+        const marker = new ymaps.Placemark(point.coords, {
+          balloonContent: `<strong>${point.name}</strong><br>${point.desc}`
+        }, {
+          preset: 'islands#blueIcon'
+        });
+        map.geoObjects.add(marker);
+      });
+
+      // Строим маршрут по платной дороге
+      const multiRoute = new ymaps.multiRouter.MultiRoute({
+        referencePoints: points.map(p => p.coords),
+        params: {
+          results: 1,
+          routingMode: "auto",
+          viaIndexes: [1,2,3,4,5,6,7,8]
+        }
+      }, {
+        boundsAutoApply: true,
+        routeActiveStrokeWidth: 6,
+        routeActiveStrokeColor: '#2ecc71',
+        routeStrokeWidth: 4,
+        routeStrokeColor: '#3498db'
+      });
+
+      map.geoObjects.add(multiRoute);
+    }
+  </script>
+
+</body>
+</html>
